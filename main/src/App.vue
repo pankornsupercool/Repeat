@@ -1,8 +1,8 @@
 <template>
 <div>
   <div id="nav">
-    <router-link to="/">Home</router-link> |||
-    <router-link to="/aboutevent">Event Detail</router-link> |||
+    <router-link to="/">Home</router-link>
+    <router-link to="/aboutevent">Event Detail</router-link> 
     <router-link to="/aboutme">About Learner</router-link>
   </div>
   <router-view/>
@@ -27,16 +27,23 @@
   color:azure;
   text-decoration: none;
   font-size:25px;
+  padding-left: 15px;
 }
 
 #nav a.router-link-exact-active {
   color: #42b983;
+  
+}
+
+#nav a:hover{
+  color: black;
+  text-shadow: 1px white;
 }
 body {
-  /* background-image: url(./images/wallgreen.jpg);
+  background-image: url(./images/wallred.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover; */
-  background-color:#2c3e50;
+  background-size: cover;
+  /* background-color:#2c3e50; */
 }
 </style>

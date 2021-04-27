@@ -1,6 +1,6 @@
 <template>
   <div class="events">
-    <img class="events-image" alt="Vue logo" src="../images/leaves.png" width="150">
+    <img class="events-image" alt="Vue logo" src="../images/love.png" width="150">
     <!-- Binding event object from EventCard with looping items in events list by event keyword. -->
     <EventCard v-for="event in events" :key="event.id" :event="event"/>
     
