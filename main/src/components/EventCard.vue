@@ -1,17 +1,23 @@
 <template>
+<router-link class="event-link" :to="{name : 'AboutEvent', params : {id : event.id}}" >
   <div class="event-card">
     <span>@{{event.time}} on {{event.date}}</span>
     <h4>{{event.title}} </h4>
   </div>
+  </router-link>
 </template>
 
 <script>
 export default {
   name: 'EventCard',
   props: {
-    event : Object
+    event :{
+      type : Object,
+      required : true
+    }
   }
 }
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -23,11 +29,16 @@ export default {
   border: 1px solid black;
   margin-bottom: 18px;
   color:black;
-  background-color:azure;
+  background-color:azure; 
 }
 
 .event-card:hover {
   transform: scale(1.02);
   box-shadow: 0 3px 12px 0;
+}
+
+.event-link {
+  color: #2c3e50;
+  text-decoration: none;
 }
 </style>

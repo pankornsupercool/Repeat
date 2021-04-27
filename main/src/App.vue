@@ -32,7 +32,6 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
-  
 }
 
 #nav a:hover{
@@ -40,7 +39,7 @@
   text-shadow: 1px white;
 }
 body {
-  background-image: url(./images/wallred.png);
+  background-image: url(./images/wallnice.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;

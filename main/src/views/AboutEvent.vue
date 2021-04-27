@@ -1,19 +1,41 @@
 <template>
   <div class="about">
-    <div class="about-card">
-    <h1>Event Detail</h1>
+    <div class="about-card" v-if="event">
+      <h1>{{ event.title }}</h1>
+      <p>{{ event.time }} on {{ event.date }} @ {{ event.location }}</p>
+      <p>{{ event.description }}</p>
     </div>
   </div>
 </template>
 
-
+<script>
+import EventService from "../services/EventService";
+export default {
+  props :['id'],
+  data() {
+    return {
+      event: null,
+      id: 123,
+    };
+  },props :['id'],
+  created() {
+    EventService.getEvent(this.id)
+      .then((response) => {
+        this.event = response.data;
+      })
+      .catch((err) => {
+        this.event = err;
+      });
+  },
+};
+</script>
 
 <style scoped>
 .about {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top:10px;
+  padding-top: 10px;
 }
 .about-card {
   width: 400px;
