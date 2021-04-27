@@ -2,7 +2,6 @@
 <div>
   <div id="nav">
     <router-link to="/">Home</router-link>
-    <router-link to="/aboutevent" class="disabled">Event Detail</router-link> 
     <router-link to="/aboutme">About Learner</router-link>
   </div>
   <router-view/>

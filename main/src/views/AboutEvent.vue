@@ -15,7 +15,6 @@ export default {
   data() {
     return {
       event: null,
-      id: 123,
     };
   },props :['id'],
   created() {
