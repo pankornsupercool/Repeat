@@ -2,7 +2,7 @@
 <div>
   <div id="nav">
     <router-link to="/">Home</router-link>
-    <router-link to="/aboutevent">Event Detail</router-link> 
+    <router-link to="/aboutevent" class="disabled">Event Detail</router-link> 
     <router-link to="/aboutme">About Learner</router-link>
   </div>
   <router-view/>
@@ -34,8 +34,14 @@
   color: #42b983;
 }
 
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+  color:#2c3e50 !important;
+}
+
 #nav a:hover{
-  color: black;
+  color: #42b983;
   text-shadow: 1px white;
 }
 body {
