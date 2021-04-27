@@ -2,7 +2,7 @@
 <div>
   <div id="nav">
     <router-link to="/">Home</router-link>
-    <router-link to="/aboutme">About Learner</router-link>
+    <router-link to="/aboutme">About🤍Me</router-link>
   </div>
   <router-view/>
 </div>
@@ -26,7 +26,7 @@
   color:azure;
   text-decoration: none;
   font-size:25px;
-  padding-left: 15px;
+  padding-left: 30px;
 }
 
 #nav a.router-link-exact-active {
